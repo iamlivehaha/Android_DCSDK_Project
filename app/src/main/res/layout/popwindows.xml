@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/user_list_background">
+
+    <Button
+        android:id="@+id/btn_add_new_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="left|center"
+        android:textSize="15sp"
+        android:letterSpacing="0.1"
+        android:maxLines="1"
+        android:text="@string/add_new_account"
+        android:textColor="@color/pgsoul_red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/rv_user_select_list" />
+
+    <Button
+        android:id="@+id/btn_delete_finish"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:letterSpacing="0.2"
+        android:text="@string/finish"
+        android:textColor="@color/pgsoul_red"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_user_select_list"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_delete_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="left|center"
+        android:letterSpacing="0.1"
+        android:maxLines="1"
+        android:text="@string/delete_record"
+        android:textColor="@color/font_gray"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/rv_user_select_list"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_user_select_list"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity = "left"
+        android:layout_gravity = "left"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarSize="3dp"
+        android:scrollbarThumbVertical="@color/font_gray"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:paddingTop="17dp"
+        android:paddingBottom="17dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_add_new_account"
+        app:layout_constraintEnd_toStartOf="@+id/btn_add_new_account"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_add_new_account"
+        app:srcCompat="@drawable/pic_add" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:paddingTop="17dp"
+        android:paddingBottom="17dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_delete_record"
+        app:layout_constraintEnd_toStartOf="@+id/btn_delete_record"
+        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/btn_delete_record"
+        app:srcCompat="@drawable/pic_delete2" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/line_color"
+        app:layout_constraintBottom_toBottomOf="@+id/rv_user_select_list"
+        app:layout_constraintEnd_toEndOf="@+id/rv_user_select_list"
+        app:layout_constraintStart_toStartOf="@+id/rv_user_select_list"
+        app:layout_constraintTop_toBottomOf="@+id/rv_user_select_list"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/font_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_user_select_list" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_popup_window_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="divider,btn_add_new_account,btn_delete_record,imageView,imageView2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

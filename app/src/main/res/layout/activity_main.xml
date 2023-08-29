@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/fragment_static"
+        android:name="com.example.myapplication_new.Fragment.StaticFragment"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_age"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Age: "
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/et_age"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight= "1"
+            android:layout_marginTop = "3dp"
+            android:layout_marginBottom= "3dp"
+            android:hint= "please input "
+            android:inputType= "number"
+            android:maxLength= "2"
+            android:textColor= "@color/black"
+            android:textSize= "17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_robot"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Driving Robot: "
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/et_robot"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight= "1"
+            android:layout_marginTop = "3dp"
+            android:layout_marginBottom= "3dp"
+            android:hint= "please input "
+            android:inputType= "text"
+            android:maxLength= "12"
+            android:textColor= "@color/black"
+            android:textSize= "17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_party"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Party: "
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/et_party"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight= "1"
+            android:layout_marginTop = "3dp"
+            android:layout_marginBottom= "3dp"
+            android:hint= "please input "
+            android:inputType= "text"
+            android:maxLength= "12"
+            android:textColor= "@color/black"
+            android:textSize= "17sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/zagu2"
+        android:drawablePadding="5dp"
+        android:enabled="false"
+        android:text="Launch" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dont click!"
+        android:textAllCaps = "false"
+        android:textSize= "17sp"
+        android:textColor= "@color/black"/>
+<!--        android:onClick= "doClick"-->
+
+    <Button
+        android:id="@+id/button_public"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="set public OnclickListener Alone"
+        android:textAllCaps = "false"
+        android:textSize= "15sp"
+        android:textColor= "#111111"/>
+
+    <Button
+        android:id="@+id/button_longclick_lambda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="longclick button to enable jump"
+        android:textAllCaps = "false"
+        android:textSize= "15sp"
+        android:textColor= "@color/white"/>
+
+    <ImageButton
+        android:id="@+id/imagebutton_01"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/zagu"
+        android:scaleType="centerInside" />
+
+</LinearLayout>
